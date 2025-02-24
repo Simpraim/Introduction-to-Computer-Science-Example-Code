@@ -6,3 +6,8 @@ while a < 5: #While a is less than 5, do something...
 #Line 4 will execute, then line 5, then the interpreter will go to line 3
 # with the new value of a (2 for example) and check if it is less than 5
 # If a is NOT less than 5, lines 4 and 5 will not execute
+
+answer = input("What do you say when you politely ask for something")
+while answer != 'please':
+ print("wrong answer")
+ answer = input("What do you say when you politely ask for something")
