@@ -2,7 +2,7 @@ answer = 'yes'
 while answer == 'yes':
     age = int(input("enter your age: "))
     if age < 0:
-        print("invalid response")
+        print('it\'s invalid response')
         continue
     elif age <= 25:
         print("youngin")
