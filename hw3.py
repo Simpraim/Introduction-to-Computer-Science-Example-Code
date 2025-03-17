@@ -8,7 +8,7 @@ while answer == 'yes':
         print("youngin")
     elif age <= 55:
         print("You're getting up there")
-    elif age <= 56:
+    elif age >= 56:
         print("How was it going to school with the dinos??")
     answer = input("would you like to enter another age?")
     if answer == 'yes':
