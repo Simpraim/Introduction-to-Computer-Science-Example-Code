@@ -19,4 +19,5 @@ class WhiteBoard:
 my_board = WhiteBoard(15,True,'')
 #Let's add some markers
 my_board.addMarker(2)
-#Let's see how many markers there are in the 
+#Let's see how many markers there are on the board
+print(my_board.numberMarkers)
