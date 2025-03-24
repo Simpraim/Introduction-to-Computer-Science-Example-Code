@@ -8,16 +8,27 @@ class WhiteBoard:
     #Class Methods
     def addMarker(self,amountofMarkers):
         self.numberMarkers = self.numberMarkers + amountofMarkers
+    def removeMarker(self, amountofMarkers):
+        self.numberMarkers = self.numberMarkers - amountofMarkers
     def writeOnBoard(self,boardStuff):
         self.boardContent = self.boardContent + boardStuff
     def eraseBoard(self):
         self.boardContent = ''
     def printBoard(self):
         print(self.boardContent)
+    def printObject(self):
+        print(f'The board has {self.numberMarkers} markers \n The value for if it is magnetic is {self.isMagnetic}\n Here is the content on the board {self.boardContent}')
 
 #Let's create our whiteboard
-my_board = WhiteBoard(15,True,'')
+bc = 'hi'
+my_board = WhiteBoard(15,True,bc)
 #Let's add some markers
 my_board.addMarker(2)
 #Let's see how many markers there are on the board
-print(my_board.numberMarkers)
+
+my_board.writeOnBoard('Stephen')
+my_board.printBoard()
+my_board.eraseBoard()
+my_board.printBoard()
+my_board.removeMarker(my_board.numberMarkers)
+
