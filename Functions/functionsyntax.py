@@ -6,11 +6,13 @@
 #On an indented block, you have your function body
 #Finally, if your function returns a value, you use the 
 #return keyword followed by the value you want to return
-def function_name(parameter1,parameter2):
-    parameter1 = parameter1 + parameter2
-    parameter2 = parameter1 - parameter2
-    return_value = parameter1 * parameter2
+def add(parameter1,parameter2):
+    return_value = parameter1 + parameter2
+    
     return return_value
 
-my_return_value = function_name(5,4)
+my_return_value = add(1,22)
+my_return_value2 = add(3,22)
+my_return_value3 = add(1,32)
+my_return_value4 = add(1,42)
 print(my_return_value)
