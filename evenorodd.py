@@ -1,5 +1,4 @@
-while  True:
-    if 1%2 == 0:
-        continue
-    elif 1%2 !=0:
-        print(0)
+listofnums = [1,3,5,7,9]
+sum = 0
+for nums in listofnums:
+    sum = sum + nums

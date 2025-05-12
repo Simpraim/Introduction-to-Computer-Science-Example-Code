@@ -1,13 +1,12 @@
 #Purpose: To add 3 pairs of numbers together
+def add_pair():
+   num1 = int(input("Give me a number"))
+   num2 = int(input("Give me a number"))
+   print(f"The sum of {num1} and {num2} is {num1+num2}") 
 
-a = int(input("Give me a number:"))
-b = int(input("Give me another number:"))
-c = int(input("Give me another number:"))
-d = int(input("Give me another number:"))
-e = int(input("Give me another number:"))
-f = int(input("Give me another number:"))
+num_pairs = 0
+while num_pairs < 3:
+    add_pair()
+    num_pairs+=1
 
-print(f'The sum of {a} and {b} is: {a+b}')
-print(f'The sum of {c} and {d} is: {c+d}')
-print(f'The sum of {e} and {f} is: {e+f}')
 
